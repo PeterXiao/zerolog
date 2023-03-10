@@ -67,7 +67,8 @@ allprojects {
   ext {
     fulcrumVersion = "0.39.0"
     hazelcastVersion = "5.2.2"
-    jmhVersion = "1.36"
+    //1.21
+    jmhVersion = "1.21"
     junitVersion = "4.13.2"
     log4jVersion = "2.20.0"
     mockitoVersion = "5.1.1"
