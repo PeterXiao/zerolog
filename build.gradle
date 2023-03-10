@@ -23,8 +23,10 @@ def baseJvmArgs = [
   "--add-opens=java.base/java.util=ALL-UNNAMED",
   "--add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED",
   "--add-opens=java.base/sun.nio.ch=ALL-UNNAMED",
+  "-Djava.security.manager=allow",
   "-XX:-MaxFDLimit"
 ]
+//  "-Djava.security.manager=allow", JDK 17 弃用了java.security.manager 可以通过该命令使用
 project.ext.set("baseJvmArgs", baseJvmArgs)
 
 allprojects {
@@ -36,8 +38,8 @@ allprojects {
   group = "com.obsidiandynamics.zerolog"
   version = "0.34.0-SNAPSHOT-JDK11"
   
-  sourceCompatibility = 11
-  targetCompatibility = 11
+  sourceCompatibility = 17
+  targetCompatibility = 17
 
   //TODO remove when Javadoc errors have been resolved
   javadoc.options.addStringOption('Xdoclint:none', '-quiet')
