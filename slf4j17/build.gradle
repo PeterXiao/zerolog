@@ -7,8 +7,12 @@ dependencies {
   
   testImplementation "org.slf4j:slf4j-api:${slf4jVersion}"
 
+  // https://mvnrepository.com/artifact/org.slf4j/slf4j-reload4j
+  //
+
+
   testImplementation "org.slf4j:slf4j-log4j12:${slf4jVersion}"
-  testImplementation "log4j:log4j:${log4jVersion}"
+  testImplementation "org.apache.logging.log4j:log4j-core:${log4jVersion}"
 }
 
 publishing {

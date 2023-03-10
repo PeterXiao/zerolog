@@ -83,7 +83,7 @@ public final class MockLogTarget implements LogTarget {
   private final List<LogEntry> entries = new CopyOnWriteArrayList<>();
   
   /**
-   *  Creates a new mock target at the lowest log level — {@link LogLevel#TRACE}.
+   *  Creates a new mock target at the lowest log level - {@link LogLevel#TRACE}.
    */
   public MockLogTarget() {
     this(LogLevel.TRACE);
