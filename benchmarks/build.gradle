@@ -7,7 +7,7 @@ dependencies {
   testImplementation "com.obsidiandynamics.fulcrum:fulcrum-dyno:${fulcrumVersion}"
   testImplementation "com.obsidiandynamics.fulcrum:fulcrum-testmark:${fulcrumVersion}"
   testImplementation "org.slf4j:slf4j-api:${slf4jVersion}"
-  testImplementation "log4j:log4j:${log4jVersion}"
+  testImplementation "org.apache.logging.log4j:log4j:${log4jVersion}"
   testImplementation "org.tinylog:tinylog:${tinylogVersion}"
   testImplementation "org.openjdk.jmh:jmh-core:${jmhVersion}"
 
