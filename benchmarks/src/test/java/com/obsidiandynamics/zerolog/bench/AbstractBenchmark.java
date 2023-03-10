@@ -20,7 +20,7 @@ public abstract class AbstractBenchmark implements BenchmarkTarget {
 
   protected abstract void cycle(float f, double d, int i, long l);
 
-  private static final String JVM_ARGS = 
+  private static final String JVM_ARGS =
       "-XX:+TieredCompilation -XX:+UseNUMA -XX:+UseCondCardMark -Xms2G -Xmx2G -Xss1M " +
       "-XX:+UseG1GC -XX:MaxGCPauseMillis=10000 -XX:InitiatingHeapOccupancyPercent=99 -verbose:gc";
 
